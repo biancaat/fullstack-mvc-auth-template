@@ -1,22 +1,39 @@
+<img src='../images/askyHomePage.png'></img>
+
+
+
 # Introduction
 
-A Simple ToDo App is built using the MVC Architecture, we have also implemented "authorization" so folx can sign up, customize & personalize the app 
-
----
-
-> Be sure to add that lovely star 😀 and fork it for your own copy
+Asky helps busy medical clinics attend to patient inquiries in an organized way.
 
 ---
 
 # Objectives
 
-- It's a beginner level app created to understand how MVC concept and logins are added
-
+My main object was to create a full-stack medical inquiry app that was easy for patients to navigate while prioritizing organization on the clinic side. I aimed to provide a solution to help busy clinics attend to the ever-increasing needs of patients in a way that allowed for organization. 
 ---
 
 # Who is this for? 
 
-- It's for beginners & intermediates with little more experience, to help understand the various aspects of building a node app with some complex features
+This app is for medical clinics that want to decrease the volume of patient phone calls by providing a user-friendly way for patients to reach the medical clinic asynchronously. 
+
+---
+
+# Optimizations 
+
+  These are some of the optimizations I am currently implementing :
+  
+- I am in the process of converting EJS to React.
+- I am currently designing the medical clinic dashboard and implementing the organizational functionality.
+- I want to change the UI to something lighter.
+- General optimizations for progressive rendering
+- Eventually, I want to incorporate the Twilio API
+
+---
+
+# Tech used 
+
+JavaScript, MongoDB, Express, Node, CSS, EJS, Passport
 
 ---
 
@@ -34,11 +51,7 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 
 # Things to add
 
-- Create a `.env` file and add the following as `key: value` 
+- Create a `.env` file under the config folder and add the following as `key: value` 
   - PORT: 2121 (can be any port example: 3000) 
   - DB_STRING: `your database URI` 
  ---
- 
- Have fun testing and improving it! 😎
-
-

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Todos</h1>
+    <ul>
+    <% todos.forEach( el => { %>
+            <li class='todoItem' data-id='<%=el._id%>'>
+                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
+                <span> <%= el.firstName %></span>
+                <span> <%= el.lastName %></span>
+                <span><%= el.birthDate %></span>
+                <span> <%= el.phoneNumber %></span>
+                <span> <%= el.email %></span>
+                <span class='del'> Delete </span>
+            </li>
+    <% }) %>    
+    </ul>
+
+    <h2><%= user.userName %> has <%= left %> things left to do.</h2>
+
+    <form action="/todos/createTodo" method='POST'>
+        <input type="text" placeholder="First Name" name='firstName'>
+        <input type="text" placeholder="Last Name" name='lastName'>
+        <input type="date" placeholder="date of birth" name='birthDate'>
+        <input type="tel" id="phone" name="phoneNumber" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <input id="emailAddress" type="email" name="email"  placeholder="user@example.ca"
+       required>
+        <textarea name='todoItem' id="" cols="30" rows="10" placeholder="What can we help you with?"></textarea>
+
+
+        <input type="submit">
+    </form>
+
+    <a href="/logout">Logout</a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

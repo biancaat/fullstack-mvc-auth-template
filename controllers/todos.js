@@ -1,4 +1,6 @@
+const { ConnectionStates } = require('mongoose')
 const Todo = require('../models/Todo')
+const moment = require('moment')
 
 module.exports = {
     getTodos: async (req,res)=>{
@@ -7,6 +9,7 @@ module.exports = {
             const todoItems = await Todo.find({userId: req.user.id})
             const itemsLeft = await Todo.countDocuments({userId: req.user.id, completed: false})
             res.render('todos.ejs', {
+                moment,
                 todos: todoItems, 
                 left: itemsLeft, 
                 user: req.user})
@@ -17,9 +20,8 @@ module.exports = {
     createTodo: async (req, res)=>{
         try{
             await Todo.create({
-                firstName: req.body.firstName,
-                lastName: req.body.lastName,
-                birthDate: req.body.birthDate,
+                fullName: req.body.fullName,
+                todaysDate: moment(new Date()).format(" MMMM Do YYYY"),
                 phoneNumber: req.body.phoneNumber,
                 email: req.body.email,
                 todo: req.body.todoItem, 

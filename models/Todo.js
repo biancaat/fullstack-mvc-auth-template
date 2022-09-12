@@ -1,17 +1,13 @@
 const mongoose = require('mongoose')
+const moment = require('moment')
 
 const TodoSchema = new mongoose.Schema({
-  firstName:{
+  fullName:{
     type: String,
     required: true
   },
-  lastName:{
-    type: String,
-    required: true
-  },
-  birthDate:{
-    type: String,
-    required: true
+  todaysDate: {
+    type : String
   },
   phoneNumber:{
     type: String,
