@@ -1,4 +1,4 @@
-<img src="images/askyHomePage.png"></img>
+<img src="public/images/askyHomePage.png"></img>
 
 
 
