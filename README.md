@@ -1,4 +1,4 @@
-<img src='../images/askyHomePage.png'></img>
+<img src="../images/askyHomePage.png"></img>
 
 
 
@@ -10,7 +10,8 @@ Asky helps busy medical clinics attend to patient inquiries in an organized way.
 
 # Objectives
 
-My main object was to create a full-stack medical inquiry app that was easy for patients to navigate while prioritizing organization on the clinic side. I aimed to provide a solution to help busy clinics attend to the ever-increasing needs of patients in a way that allowed for organization. 
+My main objective was to create a full-stack medical inquiry app that was easy for patients to navigate while prioritizing organization on the clinic side. I aimed to provide a solution to help busy clinics attend to the ever-increasing needs of patients in a way that allowed for organization. 
+
 ---
 
 # Who is this for? 
